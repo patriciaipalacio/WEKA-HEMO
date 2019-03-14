@@ -1,0 +1,1000 @@
+ 1151  sudo su
+ 1152  ls
+ 1153  clear
+ 1154  ls
+ 1155  cd Desktop/
+ 1156  cd Trabajos/
+ 1157  ls
+ 1158  cd Musica/
+ 1159  cd ..
+ 1160  cd IN
+ 1161  cd INSSIDE/
+ 1162  ls
+ 1163  cd Multicaja/
+ 1164  ls
+ 1165  cat scriptCurl.sh 
+ 1166  ls
+ 1167  cd cancert/
+ 1168  ls
+ 1169  cat cancert.sh 
+ 1170  kate cancert.sh &
+ 1171  ls
+ 1172  cd ..
+ 1173  grep "10.136.53.4" *
+ 1174  nmap -p- -T4 10.136.53.4
+ 1175  nmap -p- -T4 10.136.53.4 -open
+ 1176  nmap -p- -T4 10.136.53.4 -open -Pn
+ 1177  cd ..
+ 1178  cd Multicaja/
+ 1179  nmap -F -iL hostsOficial.txt -open
+ 1180  nmap -F -iL hostsOficial.txt -open -Pn
+ 1181  nmap -F -iL hostsOficial.txt -open -Pn -oG-
+ 1182  nmap -F -iL hostsOficial.txt -open -Pn -oG -
+ 1183  nmap -F -iL hostsOficial.txt -open -Pn -oG - | grep open
+ 1184  cat l
+ 1185  cat j
+ 1186  cd cancert/
+ 1187  ls
+ 1188  cat>k
+ 1189  for i in $(cat k); do echo $k ; done
+ 1190  for i in $(cat k); do echo $i ; done
+ 1191  cat k
+ 1192  for i in $(cat k | awk {'print $2'}); do echo $i ; done
+ 1193  for i in $(cat k | awk {'print $2'} | grep "\."); do echo $i ; done
+ 1194  for i in $(cat k | awk {'print $2'} | grep "\."); do grep $i $k ; done
+ 1195  for i in $(cat k | awk {'print $2'} | grep "\."); do grep $i k ; done
+ 1196  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done
+ 1197  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open
+ 1198  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'}
+ 1199  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'} | awk {'print $1,$2"
+ 1200  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'} | awk {'print $1,$2"'}
+ 1201  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'} | awk {'print $1","$2'}
+ 1202  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'} | awk {'print $1","$2'} > ip_hosts.sh
+ 1203  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'} | awk {'print $1","$2'} > ip_port.sh
+ 1204  for i in $(cat k | awk {'print $2'} | grep "\."); do for j in $(grep $i k| grep open); do echo $i $j ; done ; done | grep open | awk -F \/ {'print $1'} | awk {'print $1","$2'} > ip_port.csv
+ 1205  NmapGrep2csv.sh
+ 1206  touch NmapGrep2csv.sh
+ 1207  chmod +x NmapGrep2csv.sh 
+ 1208  ls
+ 1209  nano NmapGrep2csv.sh 
+ 1210  ./NmapGrep2csv.sh 
+ 1211  ls
+ 1212  nmap -F -iL hostsOficial.txt -open -Pn -oG nmapFast.txt
+ 1213  nmap -F -iL ../hostsOficial.txt -open -Pn -oG nmapFast.txt
+ 1214  nmap -F -iL ../hostsOficial.txt -open -Pn -oG nmapFast
+ 1215  ./NmapGrep2csv.sh nmapFast
+ 1216  cp NmapGrep2csv.sh /home/thinkpad/Desktop/Trabajos/tools/
+ 1217  cp NmapGrep2csv.sh /home/thinkpad/Desktop/Trabajos/Bash\ Security/repositorios/
+ 1218  sudo ln -s /home/thinkpad/Desktop/Trabajos/tools/NmapGrep2csv.sh /bin/NmapGrep2csv.sh
+ 1219  sudo ln -s /home/thinkpad/Desktop/Trabajos/tools/NmapGrep2csv.sh /bin/nmapGrep2csv.sh
+ 1220  clear
+ 1221  ls
+ 1222  nmapGrep2csv.sh nmapFast
+ 1223  nmapGrep2csv.sh nmapFast | wc -l
+ 1224  for i in $(nmapGrep2csv.sh nmapFast); do echo $i;done
+ 1225  ls
+ 1226  ./cancert.sh 10.136.53.3 135
+ 1227  ./cancert.sh 10.136.53.3 135 fuzzing_set.txt 
+ 1228  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt";done
+ 1229  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt | sed -e "s/,/ /";done
+ 1230  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt | sed -e "s/,/ /"";done
+ 1231  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt | sed -e "s/,/ /";done
+ 1232  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt | sed -e "s/,/ /g";done
+ 1233  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt;done
+ 1234  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt" | sed -e "s/,/ /g";done
+ 1235  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt" | sed -e "s/,/ /g";done >ataque_masivo.sh
+ 1236  chmod +x ataque_masivo.sh 
+ 1237  ./ataque_masivo.sh 
+ 1238  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt"  &| sed -e "s/,/ /g";done >ataque_masivo.sh
+ 1239  for i in $(nmapGrep2csv.sh nmapFast); do echo "./cancert.sh $i fuzzing_set.txt&"  | sed -e "s/,/ /g";done >ataque_masivo.sh
+ 1240  cat ataque_masivo.sh 
+ 1241  ./ataque_masivo.sh 
+ 1242  jobs
+ 1243  kill $(jobs -p)
+ 1244  jobs -p | xargs kill
+ 1245  jobs -p | xargs killjobs -p | xargs kill
+ 1246  jobs -p | xargs kill
+ 1247  jobs -p xargs kill
+ 1248  clear
+ 1249  ls
+ 1250  cd Desktop/
+ 1251  cd Trabajos/
+ 1252  clear
+ 1253  ls
+ 1254  cd Musica/
+ 1255  cd ..
+ 1256  cd INSSIDE/
+ 1257  cd Multicaja/
+ 1258  ls
+ 1259  nmap --help
+ 1260  nmap -sI
+ 1261  ls
+ 1262  cd cancert/
+ 1263  ls
+ 1264  nmap -p- 10.136.53.2 -T4
+ 1265  nmap -p- 10.136.53.2 -T4 -Pn
+ 1266  ls
+ 1267  cat ataque_masivo.sh 
+ 1268  nmap -Pn -p- -sI 10.136.54.6 10.136.52.2
+ 1269  sudo su
+ 1270  history | grep curl
+ 1271  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+ 1272  history | grep per
+ 1273  history | grep perl
+ 1274  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+ 1275  perl -E "print 'B' x 1000"
+ 1276  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(print 'B' x 10000"
+ 1277  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(print 'B' x 10000")
+ 1278  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(print 'B' x 1000")
+ 1279  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(print 'B' x 1000"
+ 1280  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(print 'B' x 1000")
+ 1281  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(print 'B' x 1000)
+ 1282  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(print -E 'B' x 1000)
+ 1283  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(perl -E "print 'B' x 1000")
+ 1284  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA $(perl -E "print 'B' x 1000")
+ 1285  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA $(perl -E \"print 'B' x 1000\")
+ 1286  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(perl -E \"print 'B' x 1000\")
+ 1287  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$(perl -E "print 'B' x 1000")
+ 1288  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA $(perl -E "print 'B' x 1000")
+ 1289  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(perl -E "print 'B' x 1000")
+ 1290  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(perl -E "print 'B' x $RANDOM")
+ 1291  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(perl -E "print chr($RANDOM) x $RANDOM")
+ 1292  while [ 1 ] ; d0 curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(perl -E "print chr($RANDOM) x $RANDOM") ; done
+ 1293  while [ 1 ] ; do curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"$(perl -E "print chr($RANDOM) x $RANDOM") ; done
+ 1294  while [ 1 ] ; do curl -s "http://10.136.54.2:9090/" -A ""$(perl -E "print chr($RANDOM) x $RANDOM") ; done
+ 1295  sh
+ 1296  while [ 1 ] ; do curl -s "http://10.136.54.2:9090/" -A "A"$(perl -E "print chr($RANDOM) x $RANDOM") ; done
+ 1297  cd ..
+ 1298  cd diccionarios/
+ 1299  ls
+ 1300  cd ..
+ 1301  ls
+ 1302  cd ..
+ 1303  cd Bash\ Security/
+ 1304  ls
+ 1305  dig @localhost lala.com
+ 1306  cat /etc/resolv.conf
+ 1307  dig @127.0.1.1 lala.com
+ 1308  cd repositorios/
+ 1309  ls
+ 1310  cd discovery/
+ 1311  ls
+ 1312  cat di
+ 1313  cat discovery.sh 
+ 1314  cd ..
+ 1315  cp -rp discovery discoverySubdominios
+ 1316  cd discoverySubdominios/
+ 1317  ls
+ 1318  nano discovery.sh 
+ 1319  nslookup www.google.com
+ 1320  kate discovery.sh &
+ 1321  ./discovery.sh 
+ 1322  ./discovery.sh dic.txt 
+ 1323  ./discovery.sh clarin.com dic.txt 
+ 1324  jobs
+ 1325  ./discovery.sh clarin.com dic.txt 
+ 1326  clear
+ 1327  ls
+ 1328  cp ../../diccionarios\ y\ padron/1-3letras .
+ 1329  ./discovery.sh clarin.com 1-3letras 
+ 1330  nslookup ziv.clarin.com
+ 1331  ifconfig
+ 1332  nano /etc/resolv.conf
+ 1333  cd ..
+ 1334  ls
+ 1335  cat hostsOficial.txt 
+ 1336  cat hostsOficial.txt  | awk -F {'print $1"."$2"."$3'}
+ 1337  cat hostsOficial.txt  | awk -F\. {'print $1"."$2"."$3'}
+ 1338  cat hostsOficial.txt  | awk -F\. {'print $1"."$2"."$3'} | sort
+ 1339  cat hostsOficial.txt  | awk -F\. {'print $1"."$2"."$3'} | sort | uniq
+ 1340  cat hostsOficial.txt  | awk -F\. {'print $1"."$2"."$3."0/24"'} | sort | uniq
+ 1341  cat hostsOficial.txt  | awk -F\. {'print $1"."$2"."$3."0/24"'} | sort | uniq >rangos.txt
+ 1342  nmap -iL rangos.txt -Pn -p 53
+ 1343  nmap -iL rangos.txt -Pn -p 53 -open
+ 1344  nmap -iL rangos.txt -Pn -p 21 -open
+ 1345  nmap -iL rangos.txt -Pn -p 22 -open
+ 1346  nmap -iL rangos.txt -Pn -p 20144 -open
+ 1347  nmap -iL rangos.txt -Pn -p 80 -open
+ 1348  nmap -iL rangos.txt -Pn -p 9090 -open
+ 1349  sudo su
+ 1350  nmap -iL rangos.txt -Pn -p 9090 -open
+ 1351  nmap -iL rangos.txt -Pn -p 53 -open
+ 1352  cat rangos.txt 
+ 1353  nano rangos.txt 
+ 1354  nmap -iL rangos.txt -Pn -p 53 -open
+ 1355  dig @10.136.52.5 www.google.com
+ 1356  dig @10.136.53.25 www.google.com
+ 1357  dig @10.136.53.25 google.com
+ 1358  dig @10.136.53.25 www.froofle.com
+ 1359  dig @10.136.53.25 www.multicaja.cl
+ 1360  dig @10.136.53.25 multicaja.cl
+ 1361  cd ..
+ 1362  cd Bash\ Security/
+ 1363  ls
+ 1364  cd repositorios/
+ 1365  ls
+ 1366  cd discoverySubdominios/
+ 1367  ls
+ 1368  cd ..
+ 1369  ls
+ 1370  cd fuzzking/
+ 1371  ls
+ 1372  cat fuzzing_set.txt 
+ 1373  cd ..
+ 1374  nmap -p53 -iL hostsOficial.txt -open
+ 1375  nmap -p53 -iL hostsOficial.txt -open -Pn
+ 1376  dig @10.136.52.5 www.google.com
+ 1377  dig @10.136.52.5 localhost
+ 1378  dig @10.136.52.5 localhosta
+ 1379  dig @10.136.52.5 localhosta.com
+ 1380  dig @
+ 1381  dig @10.136.52.5 xxxxx.avisosmdp.com.ar
+ 1382  sudo su
+ 1383  clear
+ 1384  ls
+ 1385  cd
+ 1386  cd /opt/
+ 1387  ls
+ 1388  cd carbonator/
+ 1389  ./launch_burp.sh http bash.com.ar 80
+ 1390  ls
+ 1391  cat discovery.txt 
+ 1392  pwd
+ 1393  ./launch_burp.sh http bash.com.ar 80
+ 1394  curl -s "https://www.bash.com.ar/pdf/d2eaff7300ab.txt"
+ 1395  curl -s "https://www.bash.com.ar/pdf/d2eaff7300ab.txt" > discovery.txt 
+ 1396  curl -s "https://www.bash.com.ar/pdf/d2eaff7300ab.txt" > d.txt 
+ 1397  wc -l d.txt 
+ 1398  cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n
+ 1399  cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20
+ 1400  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 ); do echo $i ;done
+ 1401  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $1","$2'}); do echo $i ;done
+ 1402  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 ); do echo $i ;done
+ 1403  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do echo $i ;done
+ 1404  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do echo $i ; grep "^166 " %$i;done
+ 1405  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do echo $i ; grep "^166 " $i;done
+ 1406  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do echo $i ; grep "^166 " d.txt;done
+ 1407  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do echo $i ; grep "^$i " d.txt;done
+ 1408  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do echo $i ; grep "^$i " d.txt | head -2;done
+ 1409  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do ; grep "^$i " d.txt | head -2;done
+ 1410  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -2;done
+ 1411  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -3;done
+ 1412  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -3;done | wc -l
+ 1413  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -3;done 
+ 1414  ssh -l root back2k.bash.com.ar
+ 1415  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -3;done 
+ 1416  cat>k
+ 1417  cat>d.txt
+ 1418  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -3;done 
+ 1419  for i in $(cat d.txt | awk {'print $1'} | sort | uniq -c | sort -n | tail -20 | awk {'print $2'}); do grep "^$i " d.txt | head -3 | awk {'print $2'};done 
+ 1420  cat>discovery.txt 
+ 1421  sudo su
+ 1422  history | grep loa
+ 1423  ls
+ 1424  history | grep lau
+ 1425  /launch_burp.sh http bash.com.ar 80
+ 1426  ./launch_burp.sh http bash.com.ar 80
+ 1427  ./launch_burp.sh https bash.com.ar 443
+ 1428  ./launch_burp.sh https https://bash.com.ar 443
+ 1429  ./launch_burp.sh https bash.com.ar 443
+ 1430  ./launch_burp.sh h\
+ 1431  ./launch_burp.sh h
+ 1432  ./launch_burp.sh HTTPS bash.com.ar 443
+ 1433  ./launch_burp.sh https bash.com.ar 443
+ 1434  ./launch_burp.sh http bash.com.ar 80
+ 1435  ./launch_burp.sh https bash.com.ar 443
+ 1436  ls
+ 1437  ./launch_burp.sh https bash.com.ar 443
+ 1438  ./launch_burp.sh https google.com 443
+ 1439  ./launch_burp.sh https bash.com.ar 443
+ 1440  ssh -l root mx7.mardelhosting.net
+ 1441  cd ..
+ 1442  cd Bash\ Security/
+ 1443  cd repositorios/
+ 1444  l
+ 1445  sls
+ 1446  cd discoverySubdominios/
+ 1447  ls
+ 1448  ./discovery.sh 
+ 1449  kate discovery.sh &
+ 1450  ./discovery.sh 
+ 1451  ./discovery.sh redmulticaja.local ../../diccionarios\ y\ padron/1-3letras 
+ 1452  ./discovery.sh redmulticaja.local ../../diccionarios\ y\ padron/1-3letras 20
+ 1453  ./discovery.sh redmulticaja.local ../../diccionarios\ y\ padron/1-3letras 20 20
+ 1454  mv /tmp/fuzzking.sh .
+ 1455  sudo su
+ 1456  ssh -l root bash.com.ar
+ 1457  cd ..
+ 1458  cd..
+ 1459  cd ..
+ 1460  cd
+ 1461  cd Downloads/
+ 1462  unzip customscannerchecks.zip 
+ 1463  curl -s "https://www.bash.com.ar"
+ 1464  curl -s "https://www.bash.com.ar" -I
+ 1465  curl -s "https://www.bash.com.ar" -I -v
+ 1466  curl -s "https://www.bash.com.ar/h" -I -v
+ 1467  curl -s "https://www.bash.com.ar/h" -v
+ 1468  curl -s "https://www.bash.com.ar/h" 
+ 1469  curl -s "https://www.bash.com.ar/h" -I
+ 1470  curl -s "https://www.bash.com.ar/h" -v -I
+ 1471  ssh -l root mx7.mardelhosting.net
+ 1472  ssh -l root bash.com.ar
+ 1473  cd /opt/
+ 1474  ls
+ 1475  history | grep ba
+ 1476  clear
+ 1477  ls
+ 1478  cd carbonator/
+ 1479  ls
+ 1480  ./launch_burp.sh
+ 1481  ./launch_burp.sh https bash.com.ar 443 /
+ 1482  ./launch_burp.sh https www.bash.com.ar 443 /
+ 1483  nano launch_burp.sh
+ 1484  ./launch_burp.sh https www.bash.com.ar 443 /
+ 1485  ls
+ 1486  ls -lah
+ 1487  date
+ 1488  firefox IntegrisSecurity_Carbonator_https_www.bash.com.ar_443.html
+ 1489  ./launch_burp.sh https www.bash.com.ar 443 /
+ 1490  ./launch_burp.sh https www.bash.com.ar 443 / discovery.txt 
+ 1491  nano launch_burp.sh
+ 1492  ./launch_burp.sh https www.bash.com.ar 443 / discovery.txt 
+ 1493  nano launch_burp.sh
+ 1494  ./launch_burp.sh https www.bash.com.ar 443 / discovery.txt 
+ 1495  ./launch_burp.sh https www.bash.com.ar 443 / discovery.txt /opt/carbonator/discovery.txt 
+ 1496  ./launch_burp.sh https www.bash.com.ar 443 / discovery.txt 
+ 1497  ./launch_burp.sh https www.bash.com.ar 443 / /opt/carbonator/discovery.txt 
+ 1498  history | grep for
+ 1499  c dDe
+ 1500  cd Desktop/
+ 1501  cd Trabajos/
+ 1502  cd INSSIDE/
+ 1503  cd Multicaja/
+ 1504  ls
+ 1505  cd cancert/
+ 1506  ls
+ 1507  cat ataque_masivo.sh 
+ 1508  l
+ 1509  ls
+ 1510  ./nmapZombie.sh 
+ 1511  ls
+ 1512  sudo su
+ 1513  ssh -l root bash.com.ar
+ 1514  ssh -l root mx7.mardelhosting.net
+ 1515  ssh -l root nmap.bash.com.ar
+ 1516  clear
+ 1517  ls
+ 1518  ssh -l root back2k.bash.com.ar
+ 1519  htop
+ 1520  ps aux | grep jar
+ 1521  history | grep sort
+ 1522  sudo su
+ 1523  ls
+ 1524  du -sh *
+ 1525  df -sh *
+ 1526  du -sh
+ 1527  sudo su
+ 1528  ssh -l root back2k.bash.com.ar
+ 1529  ls
+ 1530  ifconfig
+ 1531  htop
+ 1532  clear
+ 1533  ls
+ 1534  htop
+ 1535  cd Desktop/
+ 1536  cd Trabajos/
+ 1537  ls
+ 1538  clear
+ 1539  ls
+ 1540  cd De
+ 1541  cd Musica/
+ 1542  cd ..
+ 1543  cd INSSIDE/
+ 1544  ls
+ 1545  cd Multicaja/
+ 1546  ls
+ 1547  kate readme.txt &
+ 1548  jobs\
+ 1549  jobs
+ 1550  jobs >o
+ 1551  cat o
+ 1552  ls
+ 1553  cat *.nmap
+ 1554  sudo su 
+ 1555  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+ 1556  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+ 1557  curl -s "http://10.136.54.2:9090/" -A "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+ 1558  LS
+ 1559  ls
+ 1560  cat *.nmap
+ 1561  nmap 10.136.52.5 -Pn
+ 1562  nmap 10.136.52.5 -Pn -sV
+ 1563  sudo su
+ 1564  cd /opt/
+ 1565  ls
+ 1566  hoistory
+ 1567  history
+ 1568  history | grep la
+ 1569  cd carbonator/
+ 1570  ./launch_burp.sh https www.bash.com.ar 443 / /opt/carbonator/discovery.txt
+ 1571  ls
+ 1572  rm *.html
+ 1573  ./launch_burp.sh https www.bash.com.ar 443 / /opt/carbonator/discovery.txt
+ 1574  sudo su
+ 1575  clear
+ 1576  sudo su
+ 1577  cd /home/thinkpad/Desktop/
+ 1578  ls
+ 1579  cd Trabajos/
+ 1580  ls
+ 1581  cd INSSIDE/
+ 1582  ls
+ 1583  cd ..
+ 1584  cd Trabajos/INSSIDE/diccionarios/
+ 1585  ls
+ 1586  clear
+ 1587  ls
+ 1588  ]
+ 1589  sudo su
+ 1590  cd /home/thinkpad/Desktop/Trabajos/
+ 1591  sudo su
+ 1592  cd ..
+ 1593  cd Downloads/
+ 1594  ls
+ 1595  cat pri.electroterma.com.ar 
+ 1596  rm pri*
+ 1597  cat pri.electroterma.com.ar 
+ 1598  whereis kate
+ 1599  ssh -l root back2k.bash.com.ar
+ 1600  notepad
+ 1601  cd Desktop/Trabajos/mardelho/
+ 1602  ls
+ 1603  cat pri.electroterma.com.ar 
+ 1604  ls
+ 1605  clear
+ 1606  ls
+ 1607  cd ..
+ 1608  find | grep -i ipade
+ 1609  find | grep -i ipadestro
+ 1610  sudo su
+ 1611  ssh -l root bash.com.ar
+ 1612  sudo su
+ 1613  cd ..
+ 1614  cd
+ 1615  cd Desktop/
+ 1616  cd Trabajos/
+ 1617  cd tools/
+ 1618  sudo su
+ 1619  cd pwndb/
+ 1620  ls
+ 1621  python2.7 pwndb.py 
+ 1622  python2.7 pwndb.py --help
+ 1623  python2.7 pwndb.py --email mariano@gmail.com
+ 1624  python2.7 pwndb.py --email @gmail.com
+ 1625  python2.7 pwndb.py --email gablanco@mardelhosting.net
+ 1626  python2.7 pwndb.py --email gablanco@mardelhosting.com
+ 1627  python2.7 pwndb.py --email gablanco@gmail.com
+ 1628  python2.7 pwndb.py --email msomoza@insside.net
+ 1629  python2.7 pwndb.py --email esotracuenta@gmail.com
+ 1630  ssh -l root back2k.bash.com.ar
+ 1631  ls
+ 1632  scp -rp root@bash.com.ar:/home/juan2/trafico/ .
+ 1633  ls
+ 1634  cd trafico/
+ 1635  ccsrch *
+ 1636  ccsrch * | grep "54945"
+ 1637  cd Downloads/
+ 1638  ls
+ 1639  tar -zvxf multicaja.tar.gz 
+ 1640  cd multicaja/
+ 1641  ls
+ 1642  objdump obcom-desktop-jni-linux-amd64.jar 
+ 1643  java -jar obcom-desktop-jni-linux-amd64.jar 
+ 1644  java -jar obcom-desktop-jni-linux-i386.jar 
+ 1645  sudo su
+ 1646  cd ..
+ 1647  cd 
+ 1648  cd Desktop/Trabajos/
+ 1649  cd tools/
+ 1650  ls
+ 1651  cd pwndb/
+ 1652  ls
+ 1653  python2.7 --email online_arg@carrefour.com
+ 1654  python2.7 pwndb.py --email online_arg@carrefour.com
+ 1655  python2.7 pwndb.py carrefour.com
+ 1656  python2.7 pwndb.py admin@carrefour.com
+ 1657  python2.7 pwndb.py --email admin@carrefour.com
+ 1658  python2.7 pwndb.py --email virgencita@gmail.com
+ 1659  python2.7 pwndb.py --email virgen@gmail.com
+ 1660  python2.7 pwndb.py --email carlos@gmail.com
+ 1661  python2.7 pwndb.py --email santiago.kantorowicz@mercadolibre.com 
+ 1662  python2.7 pwndb.py --email hola@mercadolibre.com 
+ 1663  python2.7 pwndb.py --email info@mercadolibre.com 
+ 1664  python2.7 pwndb.py --email test@mercadolibre.com 
+ 1665  python2.7 pwndb.py --email marcos@mercadolibre.com 
+ 1666  python2.7 pwndb.py --email elflaco_sur@hotmail.com 
+ 1667  ssh -l root back2k.bash.com.ar
+ 1668  sudo su
+ 1669  whereis kate
+ 1670  whereis vim
+ 1671  ln -s /usr/bin/kate /usr/bin/vim
+ 1672  sudo ln -s /usr/bin/kate /usr/bin/vim
+ 1673  ssh -l root back2k.bash.com.ar
+ 1674  ssh -l root back2k.bash.com.ar
+ 1675  ssh root@back2k.bash.com.ar
+ 1676  ssh -l root bash.com.ar
+ 1677  ssh -l root www.bash.com.ar
+ 1678  df -h
+ 1679  ssh -l
+ 1680  ssh -l root back2k.bash.com.ar
+ 1681  kate &
+ 1682  ssh -l root back2k.bash.com.ar
+ 1683  ssh -l root bash.com.ar
+ 1684  sudo su
+ 1685  ssh -l root back2k.bash.com.ar
+ 1686  cd
+ 1687  cd Desktop/
+ 1688  cd Trabajos/
+ 1689  cd INSSIDE/
+ 1690  cd Farmanet/
+ 1691  ls
+ 1692  clear
+ 1693  ls
+ 1694  cd Externo/
+ 1695  ls
+ 1696  sudo su
+ 1697  ssh -l root back2k.bash.com.ar
+ 1698  cd Desktop/
+ 1699  cd /media/
+ 1700  ls
+ 1701  cd thinkpad/
+ 1702  ls
+ 1703  cd C4F9-AAB2/
+ 1704  ls
+ 1705  cd ftt/
+ 1706  ls
+ 1707  cd revision/
+ 1708  ls
+ 1709  cd ftt/
+ 1710  ls
+ 1711  ccsrch 
+ 1712  ccsrch *
+ 1713  clear
+ 1714  ls
+ 1715  sudo su
+ 1716  ls
+ 1717  tocuh readme.txt
+ 1718  touch readme.txt
+ 1719  cat alcance.txt >>readme.txt 
+ 1720  nano readme.txt 
+ 1721  cat readme.txt 
+ 1722  clear
+ 1723  ls
+ 1724  cat readme.txt 
+ 1725  nano readme.txt 
+ 1726  nano alcance.txt 
+ 1727  nmap -p80,9080 -iL alcance.txt 
+ 1728  nmap -p80,9080 -iL alcance.txt -open visibilidad1.txt
+ 1729  cat alcance.txt 
+ 1730  nmap -p80,9080 -iL alcance.txt -Pn -open visibilidad1.txt
+ 1731  clear
+ 1732  ls
+ 1733  cd
+ 1734  ls
+ 1735  cd Desktop/
+ 1736  ls
+ 1737  cd Trabajos/
+ 1738  ls
+ 1739  clear
+ 1740  ls
+ 1741  cd INSSIDE/
+ 1742  clear
+ 1743  ls
+ 1744  cd Nexus2018/
+ 1745  ls
+ 1746  cd ..
+ 1747  cd Nexus2018/
+ 1748  ls
+ 1749  mkdir ETH_2019
+ 1750  cd ETH_2019/
+ 1751  ls
+ 1752  nano alcance.txt
+ 1753  cat alcance.txt 
+ 1754  cat /etc/network/interfaces
+ 1755  sudo su
+ 1756  cd Downloads/
+ 1757  bash SoapUI-x64-5.5.0.sh 
+ 1758  sudo su
+ 1759  cd ..
+ 1760  cd .
+ 1761  cd ..
+ 1762  cd
+ 1763  ls
+ 1764  clear
+ 1765  ls
+ 1766  cd Desktop/
+ 1767  ls
+ 1768  cd 
+ 1769  cd Downloads/
+ 1770  ls
+ 1771  bash SoapUI-x64-5.5.0.sh &
+ 1772  \
+ 1773  ps aux | grep -i soa
+ 1774  ps aux | grep -i soap
+ 1775  ping nxsclws02.nexussa.cl
+ 1776  nmap -F 172.30.242.23
+ 1777  nmap -F 172.30.242.23 -Pn
+ 1778  sudo su
+ 1779  ssh -l root bash.com.ar
+ 1780  cd Desktop/
+ 1781  cd Trabajos/
+ 1782  cd INSSIDE/
+ 1783  cd Nexus2018/
+ 1784  ls
+ 1785  clear
+ 1786  ls
+ 1787  cd ETH_2019/
+ 1788  ls
+ 1789  cat readme.txt 
+ 1790  ifconfig
+ 1791  sudo su
+ 1792  ssh -l root www.bash.com.ar
+ 1793  ssh -l root mx7.mardelhosting.net
+ 1794  cd Desktop/
+ 1795  cd Trabajos/
+ 1796  sudo su
+ 1797  nmap 190.196.63.200
+ 1798  nmap 190.196.63.200 -sV
+ 1799  ssh back2k.bash.com.ar
+ 1800  ssh root@back2k.bash.com.ar
+ 1801  curl -s "190.96.2.108"
+ 1802  ssh bash.com.ar
+ 1803  ssh root@bash.com.ar
+ 1804  cd Bash\ Security/
+ 1805  cd clientes/
+ 1806  cd porsche/
+ 1807  cat index
+ 1808  cat index | strings
+ 1809  cat index | strings | grep py
+ 1810  cat index | strings | grep py > modulos_python.txt
+ 1811  nano modulos_python.txt 
+ 1812  scp modulos_python.txt back2k.bash.com.ar
+ 1813  scp modulos_python.txt root@back2k.bash.com.ar
+ 1814  scp modulos_python.txt root@back2k.bash.com.ar:/root/
+ 1815  for i in $(cat modulos_python.txt); do curl -s "https://porsche-capture360.com/$i ; done
+ 1816  for i in $(cat modulos_python.txt); do curl -s "https://porsche-capture360.com/$i" ; done
+ 1817  for i in $(cat modulos_python.txt); do "Descargando modulo: $i" ; curl -s "https://porsche-capture360.com/$i" ; done > modulos_descargados_python.txt &
+ 1818  jobs 
+ 1819  fg 1
+ 1820  for i in $(cat modulos_python.txt); do "Descargando modulo: $i" ; curl -s "https://porsche-capture360.com/$i" ; done 
+ 1821  nano $i
+ 1822  nano modulos_python.txt 
+ 1823  for i in $(cat modulos_python.txt); do  curl -s "https://porsche-capture360.com/$i" ; done 
+ 1824  for i in $(cat modulos_python.txt); do  curl -s "https://porsche-capture360.com/$i" ; done  > modulos_descargados_python.txt &
+ 1825  tail -f modulos_descargados_python.txt ~
+ 1826  cat modulos_descargados_python.txt | grep pass
+ 1827  cat modulos_descargados_python.txt | grep smtp
+ 1828  nmap smtp.sendgrid.net
+ 1829  nmap smtp.sendgrid.net -Pn
+ 1830  cat modulos_descargados_python.txt | grep http
+ 1831  cat modulos_descargados_python.txt
+ 1832  cat modulos_descargados_python.txt | grep passw
+ 1833  cat modulos_descargados_python.txt | grep setting
+ 1834  cat modulos_descargados_python.txt | grep "\.py"
+ 1835  cat modulos_descargados_python.txt | grep ".py"
+ 1836  cat modulos_descargados_python.txt | grep "\.py"
+ 1837  cat modulos_descargados_python.txt
+ 1838  cat modulos_descargados_python.txt | wc -l
+ 1839  cat modulos_descargados_python.txt 
+ 1840  cat modulos_descargados_python.txt  | grep -i passw
+ 1841  cat modulos_descargados_python.txt | grep import se
+ 1842  cat modulos_descargados_python.txt | grep "import se"
+ 1843  cat modulos_descargados_python.txt | grep "DJANGO_SETTINGS_MODULE"
+ 1844  ssh -l root back2k.bash.com.ar
+ 1845  wifi-pumpkin 
+ 1846  cd
+ 1847  nano .profile 
+ 1848  sudo nano /etc/environment
+ 1849  ssh -l root bash.com.ar
+ 1850  sudo su
+ 1851  cat>k
+ 1852  cat>h
+ 1853  cat h | sed -e "s/â”œâ”€â”€â”€//g"
+ 1854  cat h | sed -e "s/â”œâ”€â”€â”€//g" | sed -e "s/â”€â”€â”€//g"
+ 1855  ssh -l root back2k.bash.com.ar
+ 1856  ifconfig
+ 1857  ssh -l root back2k.bash.com.ar
+ 1858  cd Desktop/Trabajos/Bash\ Security/
+ 1859  cd clientes/
+ 1860  cd porsche/
+ 1861  ls
+ 1862  cat readme.txt 
+ 1863  ssh -l root back2k.bash.com.ar
+ 1864  ls
+ 1865  cd wascan/
+ 1866  ls
+ 1867  cd ..
+ 1868  cat modulos_python.txt 
+ 1869  cat modulos_python.txt | wc -l
+ 1870  nmap -p443 --script http-slowloris-check porsche-capture360.com
+ 1871  ssh -l root back2k.bash.com.ar
+ 1872  ssh -l root bash.com.ar
+ 1873  wifi-pumpkin 
+ 1874  nano /home/thinkpad/.bashrc
+ 1875  wifi-pumpkin 
+ 1876  ssh -l root bash.com.ar
+ 1877  ssh -l root b
+ 1878  ssh -l root back2b.bash.com.ar
+ 1879  ssh -l root back2k.bash.com.ar
+ 1880  cd
+ 1881  cd Desktop/
+ 1882  cd
+ 1883  cd Downloads/
+ 1884  ls
+ 1885  unzip generate_report_48.zip 
+ 1886  cd 20190303_PDFs/
+ 1887  ls
+ 1888  ssh -l root back2k.bash.com.ar
+ 1889  ping back2k.bash.com.ar
+ 1890  clear
+ 1891  ls
+ 1892  ssh -l root back2k.bash.com.ar
+ 1893  sudo su
+ 1894  theHarvester.py -d eff.org
+ 1895  theHarvester.py -d eff.org -b all
+ 1896  ssh back2k.bash.com.ar
+ 1897  ssh root@back2k.bash.com.ar
+ 1898  ifconfig
+ 1899  sudo su
+ 1900  ifconfig
+ 1901  dmesg
+ 1902  sudo su
+ 1903  medusa
+ 1904  ssh back2k.bash.com.ar
+ 1905  ifconfig
+ 1906  ping www.google.com
+ 1907  ping 192.168.81.129
+ 1908  nmap 192.168.81.129
+ 1909  ifconfig
+ 1910  nmap -sV 10.50.117.1
+ 1911  nmap 10.50.28.1-254 -p80 -open
+ 1912  ifconfig
+ 1913  grep MAC *
+ 1914  cd ..
+ 1915  grep MAC *
+ 1916  for i in $(seq 1 254); do ping -c 1 -m 1 10.50.$i.1 ; done
+ 1917  for i in $(seq 1 15); do ping -c 1 -m 1 10.50.$i.1 ; done 
+ 1918  nmap 10.50.12.1-254 -F -open
+ 1919  telnet 10.50.12.1
+ 1920  nmap 10.50.12.1-254 -p22 -open
+ 1921  nmap 10.50.1-254.1 -p22 -open
+ 1922  nmap 10.50.1-254.1 -p22 -open -sV
+ 1923  ssh 10.50.64.1
+ 1924  ping www.google.com
+ 1925  ssh -l root bash.com.ar
+ 1926  ssh -l root back2k.bash.com.ar
+ 1927  ifconfig
+ 1928  nmap -F 10.50.117.1-254 -Pn -open -sV -oA 10.50.117.1-254
+ 1929  nmap -F 10.50.1-254.1
+ 1930  nmap -F 10.50.1-254.1 -sn
+ 1931  nmap 10.50.1-254.1 -sn
+ 1932  nmap 10.1-254.1-254.1 -sn
+ 1933  nmap -F 10.50.1-254.1
+ 1934  nmap -F 10.50.1-254.1 -oA 10.50.1-254.1-22-23-brute
+ 1935  htop
+ 1936  cd Desktop/
+ 1937  cd Trabajos/
+ 1938  cd INSSIDE/
+ 1939  cd ALSEA/
+ 1940  ls
+ 1941  mkdir nmaps
+ 1942  cd nmaps/
+ 1943  ls
+ 1944  cat>hosts.txt
+ 1945  nmap -F -Pn -iL hosts.txt -oA escaneo_sin_estar_autenticado.txt
+ 1946  traceroute 10.51.118.3
+ 1947  traceroute www.google.com
+ 1948  ifconfig
+ 1949  ping 10.50.117.1
+ 1950  traceroute www.google.com
+ 1951  ping network.arara.cl
+ 1952  ls
+ 1953  ping network.arara.cl
+ 1954  ping www.google.com
+ 1955  tracert www.google.com
+ 1956  traceroute www.google.com
+ 1957  traceroute ping 10.128.128.128
+ 1958  ping 10.128.128.128
+ 1959  nmap 10.128.128.128
+ 1960  nmap 10.128.128.128 -Pn
+ 1961  ping 10.128.128.128
+ 1962  traceroute www.google.com
+ 1963  nmap -F -Pn -iL hosts.txt -oA escaneo_estando_autenticado.txt
+ 1964  ping 192.168.2.1
+ 1965  nmap 192.168.2.1
+ 1966  nmap 192.168.2.1 -Pn
+ 1967  nmap --discovery 
+ 1968  nmap --discovery -sV 192.168.2.1
+ 1969  nmap --script discovery -sV 192.168.2.1
+ 1970  nmap --script discovery -sV 192.168.2.1 -Pn
+ 1971  tracert www.google.com
+ 1972  traceroute www.google.com
+ 1973  ping 192.168.2.1
+ 1974  nmap | grep -i pin
+ 1975  nmap -sn 192.168.1-254.1-254
+ 1976  nmap -sn 192.168.1-254.1-254 -oA 192.168.1-254.1-254-pingOnly
+ 1977  ping 10.17.23.1
+ 1978  nmap 10.17.23.1
+ 1979  nmap 10.20.23.1
+ 1980  nmap 10.20.1-254.1 -p22
+ 1981  nmap 10.20.1-254.1 -p22 -open
+ 1982  sudo su
+ 1983  nmap -p23 10.20.31.1-254 -open
+ 1984  nmap -p23 10.20.31.1-254 -open -pN
+ 1985  nmap -p23 10.20.31.1-254 -open -Pn
+ 1986  nmap -p23 172.19.119.1-254 -open -Pn -oA 172.19.119.1-254-baquedano
+ 1987  cat 172.19.119.1-254-baquedano.gnmap | grep open
+ 1988  cat 172.19.119.1-254-baquedano.gnmap | grep open | wc -l
+ 1989  telnet 172.19.119.67
+ 1990  sudo su
+ 1991  cd
+ 1992  cd Desktop/
+ 1993  cd Trabajos/
+ 1994  cd INSSIDE/
+ 1995  ls
+ 1996  cd diccionarios/
+ 1997  ls
+ 1998  nmap --help | list
+ 1999  nmap --help | grep list
+ 2000  nmap 10.0.0.0/8 -sL >diccionario_ips_internas.txt
+ 2001  cat diccionario_ips_internas.txt 
+ 2002  ls -lah diccionario_ips_internas.txt 
+ 2003  wc -l diccionario_ips_internas.txt 
+ 2004  python 
+ 2005  cd ..
+ 2006  clear
+ 2007  ls
+ 2008  clear
+ 2009  ls
+ 2010  cd ..
+ 2011  cd HEMO_2018/
+ 2012  ls
+ 2013  clear
+ 2014  ls
+ 2015  cd Simulaciones_2018/
+ 2016  ls
+ 2017  cd ..
+ 2018  ls
+ 2019  cd 2019/
+ 2020  ls
+ 2021  cd .
+ 2022  cd ..
+ 2023  mkdir hemo_2019
+ 2024  cd hemo_2019/
+ 2025  ls
+ 2026  clear
+ 2027  ls
+ 2028  clear
+ 2029  ls
+ 2030  mkdir entrenamiento
+ 2031  mkdir prediccionres
+ 2032  ls
+ 2033  rm -rf prediccionres/
+ 2034  mkdir predicciones
+ 2035  cd entrenamiento/
+ 2036  ls
+ 2037  cat entrenamiento.csv 
+ 2038  ls
+ 2039  nano entrenamiento.csv 
+ 2040  rm entrenamiento.csv 
+ 2041  cd ..
+ 2042  ls
+ 2043  cd predicciones/
+ 2044  ls
+ 2045  cat apredecir.csv 
+ 2046  cd ..
+ 2047  ls
+ 2048  cd predicciones/
+ 2049  ls
+ 2050  cat apredecir.csv 
+ 2051  cd ..
+ 2052  cd entrenamiento/
+ 2053  ls
+ 2054  cat entrenamiento.csv 
+ 2055  cat entrenamiento.csv | awk {'print $1'}
+ 2056  cat entrenamiento.csv | awk -F, {'print $1'}
+ 2057  nano entrenamiento.csv 
+ 2058  cd ..
+ 2059  cd predicciones/
+ 2060  ls
+ 2061  nano apredecir.csv 
+ 2062  cat apredecir.csv 
+ 2063  cd ..
+ 2064  ls
+ 2065  find | grep arff
+ 2066  cat Año
+ 2067  1676
+ 2068  1677
+ 2069  1678
+ 2070  1679
+ 2071  1680
+ 2072  1681
+ 2073  1682
+ 2074  cat ./arffFinal/pixel-717-entrenamiento.arff
+ 2075  cd si
+ 2076  ls
+ 2077  cd 2019/
+ 2078  ls
+ 2079  cd ..
+ 2080  ls
+ 2081  cd hemo_2019/
+ 2082  ls
+ 2083  cat>header.txt
+ 2084  nano header.txt 
+ 2085  clear
+ 2086  ls
+ 2087  cd entrenamiento/
+ 2088  ls
+ 2089  cat entrenamiento.csv 
+ 2090  cat entrenamiento.csv | awk -F,  {'print $1'}
+ 2091  cat entrenamiento.csv | awk -F,  {'print $0'}
+ 2092  cat entrenamiento.csv | awk -F,  {'print $1'}
+ 2093  cat entrenamiento.csv | awk -F,  {'print $1","$2"'}
+ 2094  cat entrenamiento.csv | awk -F,  {'print $1","$2'}
+ 2095  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3'}
+ 2096  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4'}
+ 2097  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5'}
+ 2098  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6'}
+ 2099  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7'}
+ 2100  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8'}
+ 2101  cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'}
+ 2102  for i in $(seq 10 11); do cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'} ; done
+ 2103  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'} ; done
+ 2104  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'$i} ; done
+ 2105  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'\$i} ; done
+ 2106  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'$i} ; done
+ 2107  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'"$i"} ; done
+ 2108  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9''$i'} ; done
+ 2109  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'} ; done
+ 2110  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9'} ; done
+ 2111  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9,"$pixel'} ; done
+ 2112  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9,$pixel'} ; done
+ 2113  for i in $(seq 10 11); do echo pixel $i ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9","$pixel'} ; done
+ 2114  for i in $(seq 10 11); do let x=i-9 ; echo pixel $i $x ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9","$pixel'} ; done
+ 2115  for i in $(seq 10 11); do let x=i-9 ; echo pixel $x ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9","$pixel'} ; done
+ 2116  for i in $(seq 10 65); do let x=i-9 ; echo pixel $x ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9","$pixel'} ; done
+ 2117  for i in $(seq 10 65); do let x=i-9 ; echo pixel $x ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9","$pixel'} > $x.raw; done
+ 2118  ls
+ 2119  cat 9.raw 
+ 2120  cat 56.raw 
+ 2121  ls
+ 2122  cat ../header.txt 
+ 2123  nano ../header.txt 
+ 2124  for i in $(seq 10 65); do let x=i-9 ; echo pixel $x ; cat entrenamiento.csv | awk -v pixel="$i" -F,  {'print $1","$2","$3","$4","$5","$6","$7","$8","$9","$pixel'} > $x.raw; done
+ 2125  ls
+ 2126  cat 56.raw 
+ 2127  cat ../header.txt 
+ 2128  mkdir arff
+ 2129  for i in $(ls *.raw); do echo $i; done
+ 2130  for i in $(ls *.raw); do cat ../header.txt $i; done
+ 2131  for i in $(ls *.raw); do cat ../header.txt $i > arff/$i; done
+ 2132  cd arff/
+ 2133  ls
+ 2134  cat 27.raw 
+ 2135  mv *.raw *.arff
+ 2136  ls
+ 2137  for i in $(ls); do echo $i ;done
+ 2138  for i in $(ls); do mv $i $i.arff ;done
+ 2139  ls
+ 2140  clear
+ 2141  ls
+ 2142  cd ..
+ 2143  ls
+ 2144  cd ..
+ 2145  ls
+ 2146  cd predicciones/
+ 2147  ls
+ 2148  ls -lah
+ 2149  history
+ 2150  history >../../historial
